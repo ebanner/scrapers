@@ -4,7 +4,7 @@
 //
 
 //
-// Extract doctor name and phone number from a listing entry
+// Extract doctor name and phone number from a listing entry.
 //
 function unpack(entry) {
     doctor = entry.getElementsByClassName('providerNameDetails')[0].text
@@ -24,7 +24,7 @@ for (i = 0; i < entries.children.length; i++) {
     entry = entries.children[i];
     try {
         info = unpack(entry);
-		console.log(info);
+	console.log(info);
     } catch (err) {
         console.log('err');
     }
